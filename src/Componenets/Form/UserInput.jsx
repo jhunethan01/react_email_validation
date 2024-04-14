@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FaXmark, FaPaperPlane } from 'react-icons/fa6';
+import { FaPaperPlane } from 'react-icons/fa6';
+import { FaTimes } from 'react-icons/fa';
 import { motion, useAnimation } from "framer-motion";
 import * as yup from 'yup';
 
@@ -51,7 +52,7 @@ function UserInput({ email, setEmail, submitForm, emailSubmitted }) {
                 <input className={`${emailSubmitted ? 'disable-cursor' : ''}`} type="text" placeholder='Enter email...' value={email} onChange={handleEmailInput} onKeyDown={(e) => { if (e.key === 'Enter') handleSubmitForm(e) }} />
                 <div className='App-form-input-buttons'>
                     <button className={`App-form-input-buttons-x ${email ? '' : 'hidden'} ${emailSubmitted ? 'disable-cursor' : ''}`} onClick={clearFormInput}>
-                        <FaXmark />
+                        <FaTimes />
                     </button>
                     <button className={`App-form-input-buttons-submit ${emailSubmitted ? 'disable-cursor' : ''}`} onClick={handleSubmitForm}>
                         <FaPaperPlane />

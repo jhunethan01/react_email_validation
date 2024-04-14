@@ -93,7 +93,7 @@
 
 .App-form-input-buttons {
   display: flex;
-  gap: 1rem;
+  gap: .5em;
   position: absolute;
   right: 0;
   top: 0;
@@ -104,8 +104,8 @@
 }
 
 .App-form-input-buttons-x {
-  color: rgb(82, 82, 82);
-  opacity: 0.5;
+  color: rgb(36, 36, 36);
+  opacity: .75;
 }
 
 .App-form-input-buttons-submit {
