@@ -93,7 +93,7 @@
 
 .App-form-input-buttons {
   display: flex;
-  gap: .5em;
+  gap: .1em;
   position: absolute;
   right: 0;
   top: 0;
@@ -104,8 +104,13 @@
 }
 
 .App-form-input-buttons-x {
+  display: flex;
+  
   color: rgb(36, 36, 36);
   opacity: .75;
+  background: none;
+  border: none;
+  font-size: 1rem;
 }
 
 .App-form-input-buttons-submit {
@@ -118,6 +123,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid white;
+  font-size: 1rem;
 }
 
 .App-form-input-buttons-submit:hover {
